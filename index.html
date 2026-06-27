@@ -1,166 +1,234 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3ヶ月で理想の身体へ - GRANT BOXING FITNESS ダイエットコース</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Noto Sans JP"', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#0f172a', // slate-900
-                            light: '#f8fafc', // slate-50
-                            primary: '#1d4ed8', // blue-700
-                            secondary: '#3b82f6', // blue-500
-                            accent: '#2563eb', // blue-600
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* スムーススクロール */
-        html { scroll-behavior: smooth; }
-        /* details/summaryのアニメーション */
-        details > summary { list-style: none; cursor: pointer; }
-        details > summary::-webkit-details-marker { display: none; }
-    </style>
-</head>
-<body class="font-sans text-slate-800 antialiased bg-white">
-<!-- Header -->
+<!-- ===========================
+ Header
+=========================== -->
 <nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
 
-        <!-- 左側 -->
-        <div class="flex items-center gap-4">
+        <!-- Left -->
+        <div class="flex items-center gap-3">
 
-            <!-- ロゴ -->
-            <img src="https://github.com/kabe0010-alt/grantbixingandfitness/blob/main/IMG_0996%20(1).JPG"
-                 alt="グラントボクシング＆フィットネス"
-                 class="h-14 w-auto">
+            <img
+                src="images/logo.jpg"
+                alt="GRANT BOXING FITNESS"
+                class="h-12 sm:h-14 md:h-16 w-auto">
 
-            <!-- 店舗情報 -->
             <div class="leading-tight">
-                <h1 class="text-base sm:text-lg font-bold text-slate-900">
+                <h1 class="text-sm sm:text-lg font-black text-slate-900">
                     グラント ボクシング＆フィットネス
                 </h1>
 
-                <p class="flex items-center text-sm text-slate-600 mt-1">
-                    <i data-lucide="map-pin" class="w-4 h-4 mr-1 text-red-500"></i>
+                <p class="flex items-center text-xs sm:text-sm text-slate-600 mt-1">
+                    <i data-lucide="map-pin"
+                        class="w-4 h-4 text-red-500 mr-1"></i>
                     松戸駅西口 徒歩1分
                 </p>
             </div>
-
         </div>
 
-        <!-- 右側 -->
-        <a href="https://gym.grantjapan.com/experience/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-full transition duration-300 shadow-lg flex items-center gap-2">
+        <!-- CTA -->
+        <a
+            href="https://gym.grantjapan.com/experience/"
+            target="_blank"
+            class="bg-red-600 hover:bg-red-700 text-white
+                   text-xs sm:text-sm
+                   font-bold
+                   px-3 sm:px-6
+                   py-2 sm:py-3
+                   rounded-full
+                   shadow-lg
+                   transition
+                   flex items-center gap-2">
 
-            <i data-lucide="calendar" class="w-5 h-5"></i>
-            体験レッスンお申し込み
-
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            <span class="hidden sm:inline">
+                体験レッスンお申し込み
+            </span>
+            <span class="sm:hidden">
+                体験
+            </span>
         </a>
-
     </div>
 </nav>
-<!-- キャッチコピー -->
-<header class="bg-brand-dark py-20">
-    ...
-</header>
-    <header class="relative　pt-24 pb-32 flex items-center justify-center min-h-[60vh] bg-brand-dark">
-        <div class="absolute inset-0 overflow-hidden">
-            <img src="https://github.com/kabe0010-alt/grantbixingandfitness/blob/main/D2D29630-EBE8-4A95-85C6-BDBA75C09D44.png" class="w-full h-full object-cover opacity-40">
-            <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 to-brand-dark/50"></div>
-        </div>
-        
-        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center sm:text-left mt-8">
-            <p class="text-brand-secondary font-bold text-lg sm:text-xl mb-4 tracking-widest uppercase">30代・40代・50代からでも変われる</p>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-6">
-                3ヶ月で<span class="text-brand-secondary">理想の身体</span>へ。<br>
-                <span class="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 block">食事制限なし飲酒もOKのボクシングダイエット</span>
-            </h1>
-            
-            <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-xl inline-block mb-8 max-w-2xl">
-                <p class="text-gray-200 text-lg mb-4 italic font-medium">「何をやっても続かなかった」<br>「年齢とともに痩せにくくなった」</p>
-                <p class="text-white font-bold text-xl">そんな方のための、完全サポート型ダイエットコース。<br>元A級プロボクサーが一人ひとりに合わせてご指導いたします。</p>
-            </div>
 
-            <ul class="text-white mb-10 flex flex-wrap gap-4 justify-center sm:justify-start">
-                <li class="flex items-center bg-brand-primary/20 px-4 py-2 rounded-full border border-brand-primary/50"><i data-lucide="check-circle-2" class="text-brand-secondary mr-2 w-5 h-5"></i>運動初心者歓迎</li>
-                <li class="flex items-center bg-brand-primary/20 px-4 py-2 rounded-full border border-brand-primary/50"><i data-lucide="check-circle-2" class="text-brand-secondary mr-2 w-5 h-5"></i>リバウンド対策サポート</li>
-                <li class="flex items-center bg-brand-primary/20 px-4 py-2 rounded-full border border-brand-primary/50"><i data-lucide="check-circle-2" class="text-brand-secondary mr-2 w-5 h-5"></i>ストレス発散＆脂肪燃焼</li>
-                <li class="flex items-center bg-brand-primary/20 px-4 py-2 rounded-full border border-brand-primary/50"><i data-lucide="check-circle-2" class="text-brand-secondary mr-2 w-5 h-5"></i>食事アドバイス付き</li>
+<!-- ===========================
+ Hero Image
+=========================== -->
+
+<section class="pt-20">
+
+    <img
+        src="images/hero.jpg"
+        alt="ボクシングダイエット"
+        class="w-full
+               h-[220px]
+               sm:h-[350px]
+               lg:h-[520px]
+               object-cover">
+
+</section>
+
+
+<!-- ===========================
+ Hero
+=========================== -->
+
+<header class="bg-brand-dark">
+    <div class="max-w-6xl mx-auto px-5 py-14 md:py-24">
+        <div class="max-w-3xl text-center md:text-left">
+            <p class="text-brand-secondary
+                      font-bold
+                      tracking-widest
+                      uppercase
+                      text-sm
+                      sm:text-lg
+                      mb-5">
+                30代・40代・50代からでも変われる
+            </p>
+            <h1 class="font-black
+                       text-white
+                       leading-tight
+                       text-4xl
+                       sm:text-5xl
+                       lg:text-6xl">
+                3ヶ月で
+                <span class="text-brand-secondary">
+                    理想の身体
+                </span>
+                へ。
+            </h1>
+            <h2 class="mt-5
+                       text-white
+                       font-bold
+                       leading-relaxed
+                       text-xl
+                       sm:text-3xl">
+                食事制限なし・飲酒もOKの<br class="hidden sm:block">
+                ボクシングダイエット
+            </h2>
+
+            <div class="mt-10
+                        bg-white/10
+                        backdrop-blur
+                        rounded-xl
+                        border
+                        border-white/20
+                        p-6">
+
+                <p class="text-gray-200
+                          text-base
+                          sm:text-lg
+                          leading-8">
+                    「何をやっても続かなかった」
+                    <br>
+                    「年齢とともに痩せにくくなった」
+                </p>
+                <p class="mt-5
+                          text-white
+                          font-bold
+                          text-lg
+                          sm:text-2xl
+                          leading-relaxed">
+
+                    そんな方のための完全サポート型ダイエットコース。
+                    元A級プロボクサーが
+                    一人ひとりに合わせて丁寧にご指導します。
+                </p>
+            </div>
+            <ul class="grid
+                       grid-cols-1
+                       sm:grid-cols-2
+                       gap-3
+                       mt-10">
+
+                <li class="bg-brand-primary/20 rounded-full border border-brand-primary/50 px-4 py-3 text-white flex items-center">
+                    <i data-lucide="check-circle-2"
+                        class="mr-2 text-brand-secondary"></i>
+                    運動初心者歓迎
+                </li>
+
+                <li class="bg-brand-primary/20 rounded-full border border-brand-primary/50 px-4 py-3 text-white flex items-center">
+                    <i data-lucide="check-circle-2"
+                        class="mr-2 text-brand-secondary"></i>
+                    リバウンド対策サポート
+                </li>
+
+                <li class="bg-brand-primary/20 rounded-full border border-brand-primary/50 px-4 py-3 text-white flex items-center">
+                    <i data-lucide="check-circle-2"
+                        class="mr-2 text-brand-secondary"></i>
+                    ストレス発散＆脂肪燃焼
+                </li>
+
+                <li class="bg-brand-primary/20 rounded-full border border-brand-primary/50 px-4 py-3 text-white flex items-center">
+                    <i data-lucide="check-circle-2"
+                        class="mr-2 text-brand-secondary"></i>
+                    食事アドバイス付き
+                </li>
             </ul>
         </div>
-        
-    </header>
+    </div>
+</header>
+<!-- ===========================
+ お悩み
+=========================== -->
 
-    <!-- お悩み -->
-    <section class="py-20 bg-brand-light">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-black text-brand-dark mb-4">こんなお悩みありませんか？</h2>
-                <div class="w-16 h-1 bg-brand-primary mx-auto"></div>
-            </div>
+<section class="py-16 md:py-24 bg-brand-light">
+    <div class="max-w-4xl mx-auto px-5">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black text-brand-dark">
+                こんなお悩みありませんか？
+            </h2>
+            <div class="w-20 h-1 bg-brand-primary mx-auto mt-5"></div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-12">
+            <ul class="space-y-5 text-base sm:text-lg font-medium">
 
-            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 relative overflow-hidden">
-                <!-- 装飾 -->
-                <i data-lucide="message-circle-question" class="absolute -right-10 -bottom-10 w-64 h-64 text-slate-50 opacity-50"></i>
-                
-                <ul class="space-y-4 text-lg text-slate-700 relative z-10 font-medium">
-                    <li class="flex items-start">
-                        <i data-lucide="check-square" class="text-brand-primary mt-1 mr-3 w-6 h-6 flex-shrink-0"></i>
-                        健康診断で体重や血糖値を指摘された
-                    </li>
-                    <li class="flex items-start">
-                        <i data-lucide="check-square" class="text-brand-primary mt-1 mr-3 w-6 h-6 flex-shrink-0"></i>
-                        お腹周りの脂肪が気になる
-                    </li>
-                    <li class="flex items-start">
-                        <i data-lucide="check-square" class="text-brand-primary mt-1 mr-3 w-6 h-6 flex-shrink-0"></i>
-                        若い頃の服が入らなくなった
-                    </li>
-                    <li class="flex items-start">
-                        <i data-lucide="check-square" class="text-brand-primary mt-1 mr-3 w-6 h-6 flex-shrink-0"></i>
-                        ジムに入会したけど続かなかった
-                    </li>
-                    <li class="flex items-start">
-                        <i data-lucide="check-square" class="text-brand-primary mt-1 mr-3 w-6 h-6 flex-shrink-0"></i>
-                        仕事や家事で運動する時間がない
-                    </li>
-                    <li class="flex items-start">
-                        <i data-lucide="check-square" class="text-brand-primary mt-1 mr-3 w-6 h-6 flex-shrink-0"></i>
-                        ダイエットしてもリバウンドしてしまう
-                    </li>
-                    <li class="flex items-start">
-                        <i data-lucide="check-square" class="text-brand-primary mt-1 mr-3 w-6 h-6 flex-shrink-0"></i>
-                        自己流では結果が出ない
-                    </li>
-                </ul>
-
-                <div class="mt-10 text-center bg-red-50 p-6 rounded-xl border border-red-100">
-                    <p class="text-xl font-bold text-red-600">もし一つでも当てはまるなら、<br class="sm:hidden">今こそ身体を変えるタイミングです。</p>
-                </div>
+                <li class="flex">
+                    <i data-lucide="check-square"
+                        class="mr-3 text-brand-primary shrink-0"></i>
+                    健康診断で体重や血糖値を指摘された
+                </li>
+                <li class="flex">
+                    <i data-lucide="check-square"
+                        class="mr-3 text-brand-primary shrink-0"></i>
+                    お腹周りの脂肪が気になる
+                </li>
+                <li class="flex">
+                    <i data-lucide="check-square"
+                        class="mr-3 text-brand-primary shrink-0"></i>
+                    若い頃の服が入らなくなった
+                </li>
+                <li class="flex">
+                    <i data-lucide="check-square"
+                        class="mr-3 text-brand-primary shrink-0"></i>
+                    ジムに入会したけど続かなかった
+                </li>
+                <li class="flex">
+                    <i data-lucide="check-square"
+                        class="mr-3 text-brand-primary shrink-0"></i>
+                    仕事や家事で運動する時間がない
+                </li>
+                <li class="flex">
+                    <i data-lucide="check-square"
+                        class="mr-3 text-brand-primary shrink-0"></i>
+                    ダイエットしてもリバウンドしてしまう
+                </li>
+                <li class="flex">
+                    <i data-lucide="check-square"
+                        class="mr-3 text-brand-primary shrink-0"></i>
+                    自己流では結果が出ない
+                </li>
+            </ul>
+            <div class="mt-10 bg-red-50 border border-red-100 rounded-xl p-5">
+                <p class="text-center text-lg sm:text-2xl font-black text-red-600 leading-relaxed">
+                    もし一つでも当てはまるなら、
+                    <span class="block sm:inline">
+                        今こそ身体を変えるタイミングです。
+                    </span>
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- なぜ失敗するのか -->
     <section class="py-20 bg-white">
