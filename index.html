@@ -41,39 +41,65 @@
     </style>
 </head>
 <body class="font-sans text-slate-800 antialiased bg-white">
+<!-- Header -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
-    <!-- 共通ナビゲーション（固定） -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="font-black text-xl text-brand-dark tracking-wider">
-                GRANT <span class="text-brand-primary">FITNESS</span>
+        <!-- 左側 -->
+        <div class="flex items-center gap-4">
+
+            <!-- ロゴ -->
+            <img src="/Users/kusu0415/Desktop/Grant_LP/IMG_0996 (1).JPG"
+                 alt="グラントボクシング＆フィットネス"
+                 class="h-14 w-auto">
+
+            <!-- 店舗情報 -->
+            <div class="leading-tight">
+                <h1 class="text-base sm:text-lg font-bold text-slate-900">
+                    グラント ボクシング＆フィットネス
+                </h1>
+
+                <p class="flex items-center text-sm text-slate-600 mt-1">
+                    <i data-lucide="map-pin" class="w-4 h-4 mr-1 text-red-500"></i>
+                    松戸駅西口 徒歩1分
+                </p>
             </div>
-            <div class="hidden sm:block">
-                <a href="#contact" class="bg-brand-primary hover:bg-brand-secondary text-white px-6 py-2 rounded-full font-bold transition duration-300">
-                    無料カウンセリング
-                </a>
-            </div>
+
         </div>
-    </nav>
 
-    <!-- ファーストビュー (Hero) -->
-    <header class="relative pt-16 pb-32 flex items-center justify-center min-h-[90vh] bg-brand-dark">
-        <!-- 背景画像 (40代男女のスパーリングイメージ) -->
+        <!-- 右側 -->
+        <a href="https://gym.grantjapan.com/experience/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-full transition duration-300 shadow-lg flex items-center gap-2">
+
+            <i data-lucide="calendar" class="w-5 h-5"></i>
+            体験レッスンお申し込み
+
+        </a>
+
+    </div>
+</nav>
+<!-- キャッチコピー -->
+<header class="bg-brand-dark py-20">
+    ...
+</header>
+    <header class="relative　pt-24 pb-32 flex items-center justify-center min-h-[60vh] bg-brand-dark">
         <div class="absolute inset-0 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="30代〜50代男女のトレーニング風景" class="w-full h-full object-cover opacity-40">
+            <img src="/Users/kusu0415/Desktop/Grant_LP/D2D29630-EBE8-4A95-85C6-BDBA75C09D44.png" class="w-full h-full object-cover opacity-40">
             <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 to-brand-dark/50"></div>
         </div>
         
-        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center sm:text-left">
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center sm:text-left mt-8">
             <p class="text-brand-secondary font-bold text-lg sm:text-xl mb-4 tracking-widest uppercase">30代・40代・50代からでも変われる</p>
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-6">
                 3ヶ月で<span class="text-brand-secondary">理想の身体</span>へ。<br>
-                <span class="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 block">無理な食事制限なしのボクシングダイエット</span>
+                <span class="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 block">食事制限なし飲酒もOKのボクシングダイエット</span>
             </h1>
             
             <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-xl inline-block mb-8 max-w-2xl">
                 <p class="text-gray-200 text-lg mb-4 italic font-medium">「何をやっても続かなかった」<br>「年齢とともに痩せにくくなった」</p>
-                <p class="text-white font-bold text-xl">そんな方のための、完全サポート型ダイエットコース。<br>元プロボクサーが一人ひとりに合わせて指導します。</p>
+                <p class="text-white font-bold text-xl">そんな方のための、完全サポート型ダイエットコース。<br>元A級プロボクサーが一人ひとりに合わせてご指導いたします。</p>
             </div>
 
             <ul class="text-white mb-10 flex flex-wrap gap-4 justify-center sm:justify-start">
@@ -82,13 +108,8 @@
                 <li class="flex items-center bg-brand-primary/20 px-4 py-2 rounded-full border border-brand-primary/50"><i data-lucide="check-circle-2" class="text-brand-secondary mr-2 w-5 h-5"></i>ストレス発散＆脂肪燃焼</li>
                 <li class="flex items-center bg-brand-primary/20 px-4 py-2 rounded-full border border-brand-primary/50"><i data-lucide="check-circle-2" class="text-brand-secondary mr-2 w-5 h-5"></i>食事アドバイス付き</li>
             </ul>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-                <a href="#contact" class="bg-brand-primary hover:bg-blue-600 text-white text-center text-lg font-bold py-4 px-10 rounded-full shadow-lg shadow-brand-primary/30 transition transform hover:-translate-y-1">
-                    無料カウンセリングはこちら
-                </a>
-            </div>
         </div>
+        
     </header>
 
     <!-- お悩み -->
@@ -151,7 +172,7 @@
 
             <div class="flex flex-col md:flex-row items-center gap-10">
                 <div class="w-full md:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="悩む女性" class="rounded-2xl shadow-lg w-full object-cover h-80 grayscale opacity-80">
+                    <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="shadow-lg w-full object-cover h-80 grayscale opacity-80">
                 </div>
                 <div class="w-full md:w-1/2">
                     <p class="text-lg text-slate-700 mb-6 leading-relaxed">
@@ -176,8 +197,8 @@
     <section class="py-20 bg-slate-100">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-black text-brand-dark mb-4">GRANT BOXING FITNESSの<br class="sm:hidden">ダイエットコースが選ばれる理由</h2>
-                <div class="w-16 h-1 bg-brand-primary mx-auto mb-6"></div>
+                <h2 class="text-3xl md:text-4xl font-black text-brand-dark mb-4">グラントの<br class="sm:hidden">ダイエットコースが選ばれる理由</h2>
+                <div class="w-16 h-1 bg-brand-primary mx-auto mb-8"></div>
                 <p class="text-slate-600 text-lg">無理なく続けられ、確かな結果に導く4つの強み</p>
             </div>
 
@@ -224,7 +245,7 @@
                     </div>
                     <div class="w-full md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
                         <div class="text-brand-primary font-black text-2xl mb-2">REASON 03</div>
-                        <h3 class="text-2xl font-bold text-brand-dark mb-4">無理な食事制限なし</h3>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-4">食事制限なし・飲酒もOK</h3>
                         <p class="text-slate-600 text-lg leading-relaxed">
                             極端な糖質制限や断食は行いません。「食べない」のではなく「正しく食べる」知識を身につけます。あなたのライフスタイルに合わせて、日常生活で実践できる持続可能な食事改善をアドバイスします。
                         </p>
@@ -244,6 +265,21 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- 理由5 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="健康的な食事" class="h-64 md:h-full w-full object-cover">
+                    </div>
+                    <div class="w-full md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="text-brand-primary font-black text-2xl mb-2">REASON 05</div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-4">最新機器を使用した</h3>
+                        <p class="text-slate-600 text-lg leading-relaxed">
+                            なんとなく動くのではなく最新技術を活用して効率的に成果を確認します。
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -260,25 +296,25 @@
                 <!-- Case 1 -->
                 <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
                     <div class="p-6 border-b border-slate-700 bg-slate-900/50 text-center">
-                        <h3 class="text-xl font-bold">40代男性 会社員</h3>
+                        <h3 class="text-xl font-bold">30代女性</h3>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-6">
                             <div class="text-center w-5/12 bg-slate-700 p-3 rounded">
                                 <span class="block text-sm text-slate-300">Before</span>
-                                <span class="font-bold">体重：○○kg</span><br>
-                                <span class="font-bold">ウエスト：○○cm</span>
+                                <span class="font-bold">体重：80kg</span><br>
+                                <span class="font-bold">ウエスト：95cm</span>
                             </div>
                             <i data-lucide="arrow-right" class="text-brand-secondary w-8 h-8"></i>
                             <div class="text-center w-5/12 bg-brand-primary/30 border border-brand-primary p-3 rounded">
                                 <span class="block text-sm text-brand-secondary">After</span>
-                                <span class="font-bold">体重：○○kg</span><br>
-                                <span class="font-bold">ウエスト：○○cm</span>
+                                <span class="font-bold">体重：60kg</span><br>
+                                <span class="font-bold">ウエスト：77cm</span>
                             </div>
                         </div>
                         <div class="text-center mb-4 text-brand-secondary font-black text-2xl">
-                            −○kg 達成<br>
-                            <span class="text-xl">ウエスト −○cm</span>
+                            −29kg 達成<br>
+                            <span class="text-xl">ウエスト −18cm</span>
                         </div>
                         <p class="text-slate-300 text-sm bg-slate-900 p-4 rounded-lg italic">
                             「健康診断の数値が改善し、仕事中も疲れにくくなりました。」
@@ -289,24 +325,27 @@
                 <!-- Case 2 -->
                 <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
                     <div class="p-6 border-b border-slate-700 bg-slate-900/50 text-center">
-                        <h3 class="text-xl font-bold">50代女性 主婦</h3>
+                        <h3 class="text-xl font-bold">40代女性</h3>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-6">
                             <div class="text-center w-5/12 bg-slate-700 p-3 rounded">
                                 <span class="block text-sm text-slate-300">Before</span>
-                                <span class="font-bold">体重：○○kg</span>
+                                <span class="font-bold">体重：67kg</span><br>
+                                <span class="font-bold">ウエスト：100cm</span>
                             </div>
                             <i data-lucide="arrow-right" class="text-brand-secondary w-8 h-8"></i>
                             <div class="text-center w-5/12 bg-brand-primary/30 border border-brand-primary p-3 rounded">
                                 <span class="block text-sm text-brand-secondary">After</span>
-                                <span class="font-bold">体重：○○kg</span>
+                                <span class="font-bold">体重：53kg</span>
+                                <span class="font-bold">ウエスト：80cm</span>
                             </div>
                         </div>
                         <div class="text-center mb-4 text-brand-secondary font-black text-2xl">
-                            −○kg 達成
+                            −14kg 達成<br>
+                            <span class="text-xl">ウエスト −20cm</span>
                         </div>
-                        <p class="text-slate-300 text-sm bg-slate-900 p-4 rounded-lg italic mt-12">
+                        <p class="text-slate-300 text-sm bg-slate-900 p-4 rounded-lg italic">
                             「諦めていた洋服がまた着られるようになりました。」
                         </p>
                     </div>
@@ -445,7 +484,7 @@
 
     <!-- トレーナー紹介 & 料金 -->
     <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4">
             
             <div class="flex flex-col lg:flex-row gap-12">
                 <!-- トレーナー -->
@@ -458,16 +497,16 @@
                         <div class="w-40 h-40 shrink-0">
                             <!-- プロフィール画像プレースホルダー -->
                             <div class="w-full h-full rounded-full bg-slate-300 overflow-hidden border-4 border-white shadow-lg">
-                                <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="代表トレーナー" class="w-full h-full object-cover">
+                                <img src="/Users/kusu0415/Desktop/Grant_LP/Screenshot 2026-06-26 at 23.31.59.png" alt="代表トレーナー" class="w-full h-full object-cover">
                             </div>
                         </div>
                         <div>
-                            <p class="text-brand-primary font-bold mb-1">代表 / 元プロボクサー</p>
-                            <h3 class="text-2xl font-black text-brand-dark mb-4">○○ ○○</h3>
+                            <p class="text-brand-primary font-bold mb-1">代表 / 元A級プロボクサー</p>
+                            <h3 class="text-2xl font-black text-brand-dark mb-4">阿部　恒一</h3>
                             <div class="mb-4 text-sm text-slate-600 bg-white p-3 rounded border border-slate-200">
                                 <p class="font-bold text-slate-800 mb-1">【経歴】</p>
                                 <ul class="list-disc list-inside space-y-1">
-                                    <li>〇〇タイトル獲得</li>
+                                    <li>石丸ボクシングジム ジュニアフライ級<br>   [現在のライトフライ級48.97Kgリミット]</li>
                                     <li>プロ戦績 ○勝○敗</li>
                                     <li>フィットネス指導歴 ○年</li>
                                 </ul>
@@ -512,8 +551,8 @@
                             </div>
                         </div>
                         <p class="text-center text-sm text-slate-400 mb-6">※詳細はお問い合わせ時、または無料カウンセリングにてご説明いたします。</p>
-                        <a href="#contact" class="block w-full text-center bg-white text-brand-dark hover:bg-slate-100 font-bold py-3 rounded-lg transition duration-300">
-                            まずは無料カウンセリングへ
+                        <a href="https://gym.grantjapan.com/experience/" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-white text-brand-dark hover:bg-slate-100 font-bold py-3 rounded-lg transition duration-300">
+                            体験レッスンをお申し込みする
                         </a>
                     </div>
                 </div>
@@ -581,7 +620,7 @@
     <section id="contact" class="py-24 bg-brand-dark text-white text-center relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center"></div>
         
-        <div class="max-w-4xl mx-auto px-4 relative z-10">
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
             <h2 class="text-3xl md:text-5xl font-black mb-8 leading-tight">
                 あなたの<span class="text-brand-secondary">人生最後のダイエット</span>に<br class="hidden sm:block">しませんか？
             </h2>
@@ -594,19 +633,19 @@
                     <span class="block">自信を持って服を選べる自分へ。</span>
                 </span>
             </p>
-            <p class="text-xl font-bold mb-8">まずは無料カウンセリングから始めてみませんか？</p>
+            <p class="text-xl font-bold mb-8">まずは体験レッスンから始めてみませんか？</p>
 
             <div class="space-y-6 max-w-xl mx-auto">
                 <!-- CTAボタン -->
-                <a href="#" class="block w-full bg-brand-primary hover:bg-blue-600 text-white text-xl font-bold py-5 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.4)] transition transform hover:scale-105 flex justify-center items-center">
-                    <i data-lucide="calendar-check" class="mr-2"></i> 無料カウンセリングを予約する
+                <a href="https://gym.grantjapan.com/experience/" target="_blank" rel="noopener noreferrer" class="block w-full bg-brand-primary hover:bg-blue-600 text-white text-xl font-bold py-5 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.4)] transition transform hover:scale-105 flex justify-center items-center">
+                    <i data-lucide="calendar-check" class="mr-2"></i> 体験レッスンをお申し込みする
                 </a>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <a href="tel:0000000000" class="block bg-white text-brand-dark font-bold py-4 rounded-xl flex items-center justify-center hover:bg-slate-100 transition">
                         <i data-lucide="phone" class="mr-2 text-brand-primary"></i> TEL: XXX-XXXX-XXXX
                     </a>
-                    <a href="#" class="block bg-[#00B900] text-white font-bold py-4 rounded-xl flex items-center justify-center hover:bg-[#009900] transition">
+                    <a href="https://gym.grantjapan.com/experience/" target="_blank" rel="noopener noreferrer" class="block bg-[#00B900] text-white font-bold py-4 rounded-xl flex items-center justify-center hover:bg-[#009900] transition">
                         <i data-lucide="message-circle" class="mr-2"></i> LINEで予約・相談
                     </a>
                 </div>
@@ -621,7 +660,11 @@
 
     <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-4">
-            <p class="mb-4">GRANT BOXING FITNESS</p>
+            <p class="mb-4">
+                <a href="https://gym.grantjapan.com/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-secondary font-bold text-lg transition duration-300">
+                    GRANT BOXING FITNESS
+                </a>
+            </p>
             <p>&copy; 2026 GRANT BOXING FITNESS. All Rights Reserved.</p>
         </div>
     </footer>
